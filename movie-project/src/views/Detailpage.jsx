@@ -13,6 +13,7 @@ export default function DetailPage() {
       const { data } = await axios.get(
         `https://h8-phase2-gc.vercel.app/apis/pub/movie/movies/${id}`
       );
+      console.log(data);
 
       setMovie(data.data);
     } catch (error) {
@@ -65,6 +66,9 @@ export default function DetailPage() {
             <h1 className="text-2xl font-bold mb-4 text-center md:text-left">
               {movies.title}
             </h1>
+            <span className="text-2xl font-bold font-mono mb-4 text-center md:text-left text-black">
+              {movies.Genre.name}
+            </span>
             <p className="mb-6 text-center md:text-left">{movies.synopsis}</p>
             <div className="flex justify-center md:justify-start">
               <a

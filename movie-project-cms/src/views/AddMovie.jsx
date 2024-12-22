@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import axios from "axios";
-import Form from "../components/form";
+import Form from "../components/Form";
 import { baseUrl } from "../api/baseUrl";
 import Toastify from "toastify-js";
 
