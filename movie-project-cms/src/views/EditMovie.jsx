@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router";
 import axios from "axios";
 import { baseUrl } from "../api/baseUrl";
 import Toastify from "toastify-js";
-import Form from "../components/form";
+import Form from "../components/Form";
 
 export default function EditMovie() {
   const [movie, setMovie] = useState({});
