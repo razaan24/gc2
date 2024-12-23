@@ -67,7 +67,7 @@ export default function DetailPage() {
               {movies.title}
             </h1>
             <span className="text-2xl font-bold font-mono mb-4 text-center md:text-left text-black">
-              {movies.Genre.name}
+              {movies?.Genre?.name}
             </span>
             <p className="mb-6 text-center md:text-left">{movies.synopsis}</p>
             <div className="flex justify-center md:justify-start">
